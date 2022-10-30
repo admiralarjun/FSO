@@ -29,8 +29,8 @@ const MostVoted = (props) => {
 };
 
 const App = (props) => {
-  const [selected, setSelected] = useState(0);
   const [votes, setVotes] = useState(new Array(props.anecdotes.length).fill(0));
+  const [selected, setSelected] = useState(0);
   const [hasVotes, setHasVotes] = useState(false);
 
   const getRandomIdx = (length) => {

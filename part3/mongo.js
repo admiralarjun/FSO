@@ -1,4 +1,3 @@
-/* globals process */
 
 const mongoose = require('mongoose')
 const [ , , password, name, number] = process.argv

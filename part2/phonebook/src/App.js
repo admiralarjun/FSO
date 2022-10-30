@@ -8,13 +8,13 @@ import './index.css';
 
 const App = () => {
   const [ persons, setPersons] = useState([]);
-  const [ newName, setNewName ] = useState('');
   const [ newNumber, setNewNumber ] = useState('');
   const [ searchName, setSearchName ] = useState('');
+  const [ newName, setNewName ] = useState('');
   
   // Notification message and its type
-  const [ message, setMessage ] = useState(null);
   const [ type, setType ] = useState('');
+  const [ message, setMessage ] = useState(null);
 
   const focusName = useRef();
 
@@ -79,7 +79,6 @@ const App = () => {
     }
   };
 
-  // Function to delete a person from the phonebook
   const deletePerson = (id, name) => {
     if (window.confirm(`Delete ${name}?`)) {
       personService.remove(id)

@@ -11,13 +11,10 @@ const Course = ({course}) => {
 
 export default Course;
 
-// Subcomponent to display course name
 const Header = ({name}) => <h2>{name}</h2>;
 
-// Subcomponent to display information about all the parts of a course
 const Content = ({parts}) => {
 
-    // Total number of exercises in the course
     const total = parts.reduce((sum, currentPart) => sum + currentPart.exercises, 0);
 
     return (
@@ -28,5 +25,4 @@ const Content = ({parts}) => {
     );
 };
 
-// Subcomponent to display the name of a part and the number of exercises in it
 const Part = ({part}) => <p>{part.name} {part.exercises}</p>;

@@ -1,11 +1,8 @@
 import React from 'react';
 import CountryDetails from './CountryDetails';
 
-// Component for displaying search results based on number of items in the result
-
 const CountryList = ({country, countries, setCountry}) => {
 
-    // Set search result to array with matching country names or empty array if no country is entered
     const searchResult = countries.filter(item => item.name.toLowerCase().includes(country.toLowerCase()));
 
     return (

@@ -19,7 +19,7 @@ const App = () => {
     event.preventDefault()
     const content = event.target.note.value
     event.target.note.value = ''
-    //dispatch(createNote(content))
+
     const anecdote = { content: content, votes: 0, id: generateId() }
     setAnecdotes(anecdotes.concat(anecdote))
   }

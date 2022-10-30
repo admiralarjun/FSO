@@ -10,14 +10,14 @@ let authors = [
     born: 1952,
   },
   {
-    name: 'Martin Fowler',
-    id: "afa5b6f0-344d-11e9-a414-719c6709cf3e",
-    born: 1963
-  },
-  {
     name: 'Fyodor Dostoevsky',
     id: "afa5b6f1-344d-11e9-a414-719c6709cf3e",
     born: 1821
+  },
+  {
+    name: 'Martin Fowler',
+    id: "afa5b6f0-344d-11e9-a414-719c6709cf3e",
+    born: 1963
   },
   { 
     name: 'Joshua Kerievsky', // birthyear not known

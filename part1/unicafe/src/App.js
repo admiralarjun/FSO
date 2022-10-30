@@ -22,10 +22,10 @@ const Statistics = (props) => {
             <table>
                 <tbody>
                     <tr>
-                        <td><Statistic text="good" value={props.good} /></td>
+                        <td><Statistic text="neutral" value={props.neutral} /></td>
                     </tr>
                     <tr>
-                        <td><Statistic text="neutral" value={props.neutral} /></td>
+                        <td><Statistic text="good" value={props.good} /></td>
                     </tr>
                     <tr>
                         <td><Statistic text="bad" value={props.bad} /></td>
@@ -51,8 +51,8 @@ const Button = (props) => {
     )
 }
 const App = () => {
-    const [good, setGood] = useState(0)
     const [neutral, setNeutral] = useState(0)
+    const [good, setGood] = useState(0)
     const [bad, setBad] = useState(0)
 
     

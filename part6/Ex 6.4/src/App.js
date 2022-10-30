@@ -20,9 +20,6 @@ const App = (props) => {
     event.target.note.value = ''
   }
 
-
-    //console.log ("app.js - anecdotes: ", anecdotes)
-
   return (
     <div>
       {anecdotes.map(anecdote =>

@@ -1,25 +1,25 @@
 import React, { useEffect } from 'react'
-import { useDispatch, useSelector } from 'react-redux'
 import { Switch, Route, useRouteMatch } from 'react-router-dom'
+import { useDispatch, useSelector } from 'react-redux'
 import Header from './components/Header'
 import UserList from './components/UserList'
+import BlogList from './components/BlogList'
 import LoginForm from './components/LoginForm'
 import Blog from './components/Blog'
-import BlogList from './components/BlogList'
 import BlogForm from './components/BlogForm'
 import Togglable from './components/Togglable'
-import Notification from './components/Notification'
 import { initializeBlogs, like, comment } from './reducers/blogReducer'
 import { initializeAllUsers } from './reducers/userReducer'
-import { initializeUser } from './reducers/authReducer'
+import Notification from './components/Notification'
 import { setNotification } from './reducers/notificationReducer'
+import { initializeUser } from './reducers/authReducer'
 import { Table, Button } from 'react-bootstrap'
 
 const App = () => {
   const dispatch = useDispatch()
   const user = useSelector((state) => state.user)
-  const users = useSelector((state) => state.users)
   const blogs = useSelector((state) => state.blog)
+  const users = useSelector((state) => state.users)
 
   const margin = {
     margin: 5
@@ -28,8 +28,8 @@ const App = () => {
   const blogFormRef = React.createRef()
 
   useEffect(() => {
-    dispatch(initializeUser())
     dispatch(initializeBlogs())
+    dispatch(initializeUser())
     dispatch(initializeAllUsers())
   }, [dispatch])
 

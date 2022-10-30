@@ -16,8 +16,8 @@ export const useField = (type) => {
 }
 
 export const useResource = (baseUrl) => {
+  
   const [resources, setResources] = useState([])
-
   useEffect(() => {
     axios
       .get(baseUrl)

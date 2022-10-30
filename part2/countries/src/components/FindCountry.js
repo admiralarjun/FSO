@@ -1,6 +1,5 @@
 import React from 'react';
 
-// Component with an input for finding countries
 
 const FindCountry = ({country, setCountry}) => {
     return (

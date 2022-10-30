@@ -9,14 +9,14 @@ import Notification from './components/Notification'
 import Togglable from './components/Togglable'
 
 export default function App() {
-  const [user, setUser] = useState(null)
   const [blogs, setBlogs] = useState([])
+  const [user, setUser] = useState(null)
   const [notifMsg, setNotifMsg] = useState('')
-  const [notifType, setNotifType] = useState('info')
   const [notifIsVisible, setNotifIsVisible] = useState(false)
+  const [notifType, setNotifType] = useState('info')
 
-  const blogFormRef = useRef()
   const blogFormToggleRef = useRef()
+  const blogFormRef = useRef()
 
   const getBlogs = useCallback(
     async () => {

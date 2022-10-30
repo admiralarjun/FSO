@@ -30,8 +30,8 @@ const MostVoted = (props) => {
 
 const App = (props) => {
   const [selected, setSelected] = useState(0);
-  const [votes, setVotes] = useState(new Array(props.anecdotes.length).fill(0));
   const [hasVotes, setHasVotes] = useState(false);
+  const [votes, setVotes] = useState(new Array(props.anecdotes.length).fill(0));
 
   const getRandomIdx = (length) => {
     return Math.floor(Math.random() * length);

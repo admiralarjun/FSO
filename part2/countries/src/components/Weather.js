@@ -1,12 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
-// Component for displaying weather information of a country
 
 const Weather = ({country}) => {
     const [data, setData] = useState(null);
 
-    // Fetch weather information from API
     useEffect(() => {
         const params = {
             access_key: process.env.REACT_APP_API_KEY,

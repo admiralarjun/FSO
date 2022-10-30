@@ -20,9 +20,6 @@ const App = (props) => {
     event.target.note.value = ''
   }
 
-
-    //console.log ("app.js - anecdotes: ", anecdotes)
-
     anecdotes.sort((a, b) => (a.votes <= b.votes) ? 1 : -1)
 
   return (

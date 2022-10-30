@@ -1,12 +1,12 @@
 import React, { useState } from 'react'
 import { Switch, Route, useRouteMatch } from 'react-router-dom'
-import Menu from './components/Menu'
 import AnecdoteList from './components/AnecdoteList'
+import Menu from './components/Menu'
 import About from './components/About'
-import Footer from './components/Footer'
 import CreateNew from './components/CreateNew'
-import Anecdote from './components/Anecdote'
+import Footer from './components/Footer'
 import Notification from './components/Notification'
+import Anecdote from './components/Anecdote'
 
 const App = () => {
   const [notification, setNotification] = useState(null)
@@ -19,9 +19,9 @@ const App = () => {
       id: 1
     },
     {
-      content: 'Premature optimization is the root of all evil',
-      author: 'Donald Knuth',
       info: 'http://wiki.c2.com/?PrematureOptimization',
+      author: 'Donald Knuth',
+      content: 'Premature optimization is the root of all evil',
       votes: 0,
       id: 2
     }
